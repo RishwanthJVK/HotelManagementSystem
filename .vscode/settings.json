@@ -1,0 +1,6 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.project.referencedLibraries": [],
+    "maven.executable.preferMavenWrapper": false,
+    "java.compile.nullAnalysis.mode": "disabled"
+}

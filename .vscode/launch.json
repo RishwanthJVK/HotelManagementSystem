@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run HotelApp",
+            "request": "launch",
+            "mainClass": "hotel.HotelApp",
+            "projectName": "HotelManagementSystem",
+            "vmArgs": "--add-opens javafx.graphics/com.sun.javafx.application=ALL-UNNAMED"
+        }
+    ]
+}
