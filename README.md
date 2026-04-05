@@ -1,11 +1,10 @@
-# 🏨 Hotel Management System — JavaFX Desktop Application
-### OSDL Week 10 Final Project
+# Hotel Management System — JavaFX Desktop Application
 
 ---
 
-## 📋 Overview
+## Overview
 
-A fully-featured JavaFX Hotel Management System that demonstrates **all OOP and Java concepts** covered across the 10-week OSDL course:
+A fully-featured JavaFX Hotel Management System that demonstrates **all OOP and Java concepts**:
 
 | Week | Concept | Where Used |
 |------|---------|------------|
@@ -22,7 +21,7 @@ A fully-featured JavaFX Hotel Management System that demonstrates **all OOP and 
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Prerequisites
 - **Java 17+** (JDK)
@@ -67,7 +66,7 @@ java --module-path /opt/javafx-sdk-21/lib \
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 HotelManagementSystem/
@@ -105,50 +104,45 @@ HotelManagementSystem/
 
 ---
 
-## 🖥️ Features
+## Features
 
-### 🛏 Room Management Tab
+### Room Management Tab
 - Add rooms: Standard (with/without AC), Deluxe, Luxury (with/without Private Pool)
 - View all rooms in a TableView with type, base price, amenities, availability
 - Sort rooms by price using `Collections.sort()`
 - Remove available (unoccupied) rooms
 
-### 👤 Customer Management Tab
+### Customer Management Tab
 - Add customers with name and 10-digit contact validation
 - Auto-generated Customer IDs (e.g. C1000, C1001...)
 - View all customers and their allocated rooms
 - Remove customers who don't have active bookings
 
-### 📋 Booking & Checkout Tab
+### Booking & Checkout Tab
 - Book a room: select customer + available room + number of days
 - Live tariff preview (runtime polymorphism — calls correct `calculateTariff()`)
 - Prevents double booking (occupied rooms hidden from selection)
 - Checkout: releases room, generates itemised bill with service charges
 - Full booking history table (active + checked-out)
 
-### 🔔 Services Tab (Multithreading)
+###  Services Tab (Multithreading)
 - Dispatch room service tasks (Cleaning, Food Delivery, Maintenance, etc.)
 - Each task runs on its own `Thread` using the `Runnable` interface
 - Tasks use `Thread.sleep()` to simulate work duration
 - Live activity log updates via `Platform.runLater()` (thread-safe UI updates)
 - "Dispatch All Rooms" button demonstrates truly concurrent execution
 
-### 💾 Data Persistence
+###  Data Persistence
 - All data saved to `~/HotelData/` as text files
 - Rooms, customers, and bookings persist across app restarts
-- Uses `FileWriter`, `BufferedReader`, `PrintWriter` (Week 6 File I/O)
+- Uses `FileWriter`, `BufferedReader`, `PrintWriter` 
+
+<img width="940" height="516" alt="image" src="https://github.com/user-attachments/assets/d8af2b35-a1c2-4a98-ba59-76fdc2095870" />
+<img width="940" height="515" alt="image" src="https://github.com/user-attachments/assets/3a27da34-382a-44d5-b03d-fca0a782e795" />
+<img width="940" height="516" alt="image" src="https://github.com/user-attachments/assets/a2268ae1-9cb9-4a4c-bfb8-75db00097c66" />
+<img width="940" height="517" alt="image" src="https://github.com/user-attachments/assets/0d167024-92f9-45c1-a366-64f51fa446ce" />
+<img width="940" height="519" alt="image" src="https://github.com/user-attachments/assets/0c29c65c-bc50-4b2a-87bb-b0c32585313c" />
+
 
 ---
 
-## 📝 Marking Scheme Coverage
-
-| Criterion | Implementation |
-|-----------|---------------|
-| Basic System (5M) | Room add/remove, Customer add/remove, Book room, Checkout, Bill display |
-| GUI Design (5M) | Dark-themed JavaFX UI with TabPane, TableView, ComboBox, GridPane, VBox/HBox, event handling, validation messages |
-
----
-
-## 🎨 UI Theme
-Dark navy/purple theme inspired by modern developer tools.
-Colors: `#1a1a2e` (background) · `#0f3460` (panels) · `#533483` (accent) · `#64ffda` (highlights)
